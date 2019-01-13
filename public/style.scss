@@ -1,0 +1,249 @@
+// Variables
+
+// State colors
+$success: #00E535;
+$error: #CC0000;
+
+// Other colors
+$black: #202020;
+$white: #F9F9F9;
+$bg-color: #FFF1DF;
+
+// Fonts
+$font-prim: 400 16px boreal, serif, sans-serif;
+
+
+// Styles
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: $font-prim;
+    margin: 0;
+    padding: 0;
+    background-image: url('/bg.gif');
+}
+
+
+main {
+    margin: 50px auto;
+    width: 100%;
+
+    & .main-box {
+        background-color: rgb(84, 15, 116);
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 35px 40px;
+        color: $white;
+
+        & .footer {
+            font-size: 14px;
+            text-align: center;
+            margin: 40px auto 20px;
+        }
+        
+        
+        & h1 {
+            font-size: 20px;
+            padding: 20px 0;
+            margin: 5px auto 20px;
+
+            & .txt-type {
+                background-color: $bg-color;
+                color: $black;
+                padding: 5px 10px;
+            }
+        }
+
+        & .head-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                width: 40%;
+                padding: 20px 0;
+            }
+        }
+
+        & .main-cont {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+
+            & form {
+                text-align: center;
+                position: relative;
+                display: block;
+                width: 100%;
+
+                & input[type="text"] {
+                    display: block;
+                    width: 100%;
+                    padding: 5px;
+                    text-align: left;
+                    color: #fff;
+                    font-size: 16px;
+                    margin: 20px auto;
+                    background-color: #ffffff00;
+                    border: 0px;
+                    outline: none;
+                    border-bottom: 1px solid rgba(255, 241, 223, 0.349);
+                    
+    
+                    &::placeholder {
+                        color: #ffffffe7;
+                    }
+                }
+
+                & input[type="file"] {
+                    position: absolute;
+                    left: -99999px;
+                }
+
+                & .img-label {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: rgb(255, 224, 184);
+                    color: $black;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: rgb(255, 212, 157);
+                    }
+                }
+
+
+                & input[type="submit"] {
+                    display: inline-block;
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    background-color: rgb(206, 7, 156);
+                    color: $white;
+                    border-radius: 12px;
+                    width: 80%;
+                    border: 0px;
+                    outline: none;
+
+                    &:hover {
+                        background-color: rgb(170, 0, 128);
+                    }
+                }
+            }
+        }
+    }
+
+    & .share-btn {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        border-radius: 5px;
+        background-color: $bg-color;
+        color: $black;
+        text-decoration: none;
+    }
+
+    & .wt-logo {
+        width: 25px;
+        height: 20px;
+        margin: 0 25px;
+    }
+}
+
+
+.wish {
+
+    & .beat {
+        animation: lbeat 0.6s infinite alternate;
+        transform-origin: center;
+        text-align: center;
+    }
+
+    & .center {
+        text-align: center;
+    }
+
+    & .p {
+        font-size: 20px;
+        color: rgb(255, 216, 87);
+    }
+
+    & .h3 {
+        font-size: 36px;
+        color: rgb(71, 249, 255);
+        animation: beat 0.4s infinite alternate;
+    }
+
+    & .msg {
+        color: rgb(253, 205, 255);
+        font-size: 20px;
+    }
+
+    & .msg-body {
+        color: rgb(109, 255, 194);
+    }
+
+    & .wish-img {
+        width: 100%;
+        display: block;
+        margin: 40px auto;
+        padding: 0;
+    }
+}
+
+
+@keyframes lbeat{
+	to { transform: scale(1.05); }
+}
+
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
+
+
+@media only screen and (min-width: 600px) {
+    main .main-box {
+        width: 80%;
+    }
+
+    main .wish-img {
+        width: 80% !important;
+        padding: 10px 0 !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main .main-box {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    main .main-box {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main .main-box {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    main .main-box {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    main .main-box {
+        width: 30%;
+    }
+}

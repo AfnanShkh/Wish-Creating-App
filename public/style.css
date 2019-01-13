@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font: 400 16px boreal, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("/bg.gif"); }
+
+main {
+  margin: 50px auto;
+  width: 100%; }
+  main .main-box {
+    background-color: #540f74;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 35px 40px;
+    color: #F9F9F9; }
+    main .main-box .footer {
+      font-size: 14px;
+      text-align: center;
+      margin: 40px auto 20px; }
+    main .main-box h1 {
+      font-size: 20px;
+      padding: 20px 0;
+      margin: 5px auto 20px; }
+      main .main-box h1 .txt-type {
+        background-color: #FFF1DF;
+        color: #202020;
+        padding: 5px 10px; }
+    main .main-box .head-img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .main-box .head-img img {
+        width: 40%;
+        padding: 20px 0; }
+    main .main-box .main-cont {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center; }
+      main .main-box .main-cont form {
+        text-align: center;
+        position: relative;
+        display: block;
+        width: 100%; }
+        main .main-box .main-cont form input[type="text"] {
+          display: block;
+          width: 100%;
+          padding: 5px;
+          text-align: left;
+          color: #fff;
+          font-size: 16px;
+          margin: 20px auto;
+          background-color: #ffffff00;
+          border: 0px;
+          outline: none;
+          border-bottom: 1px solid rgba(255, 241, 223, 0.349); }
+          main .main-box .main-cont form input[type="text"]::placeholder {
+            color: #ffffffe7; }
+        main .main-box .main-cont form input[type="file"] {
+          position: absolute;
+          left: -99999px; }
+        main .main-box .main-cont form .img-label {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #ffe0b8;
+          color: #202020;
+          border-radius: 5px; }
+          main .main-box .main-cont form .img-label:hover {
+            background-color: #ffd49d; }
+        main .main-box .main-cont form input[type="submit"] {
+          display: inline-block;
+          padding: 10px 15px;
+          font-size: 16px;
+          margin-bottom: 20px;
+          background-color: #ce079c;
+          color: #F9F9F9;
+          border-radius: 12px;
+          width: 80%;
+          border: 0px;
+          outline: none; }
+          main .main-box .main-cont form input[type="submit"]:hover {
+            background-color: #aa0080; }
+  main .share-btn {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: #FFF1DF;
+    color: #202020;
+    text-decoration: none; }
+  main .wt-logo {
+    width: 25px;
+    height: 20px;
+    margin: 0 25px; }
+
+.wish .beat {
+  animation: lbeat 0.6s infinite alternate;
+  transform-origin: center;
+  text-align: center; }
+.wish .center {
+  text-align: center; }
+.wish .p {
+  font-size: 20px;
+  color: #ffd857; }
+.wish .h3 {
+  font-size: 36px;
+  color: #47f9ff;
+  animation: beat 0.4s infinite alternate; }
+.wish .msg {
+  color: #fdcdff;
+  font-size: 20px; }
+.wish .msg-body {
+  color: #6dffc2; }
+.wish .wish-img {
+  width: 100%;
+  display: block;
+  margin: 40px auto;
+  padding: 0; }
+
+@keyframes lbeat {
+  to {
+    transform: scale(1.05); } }
+@keyframes beat {
+  to {
+    transform: scale(1.2); } }
+@media only screen and (min-width: 600px) {
+  main .main-box {
+    width: 80%; }
+
+  main .wish-img {
+    width: 80% !important;
+    padding: 10px 0 !important; } }
+@media only screen and (min-width: 800px) {
+  main .main-box {
+    width: 70%; } }
+@media only screen and (min-width: 1000px) {
+  main .main-box {
+    width: 55%; } }
+@media only screen and (min-width: 1200px) {
+  main .main-box {
+    width: 45%; } }
+@media only screen and (min-width: 1400px) {
+  main .main-box {
+    width: 40%; } }
+@media only screen and (min-width: 1600px) {
+  main .main-box {
+    width: 30%; } }
+
+/*# sourceMappingURL=style.css.map */
