@@ -3,11 +3,11 @@ const hbs = require('hbs');
 const bodyParser = require('body-parser');
 
 // Loading env variables
-require('dotenv').config()
+require('dotenv').config();
 
 // Middlewares
 // Express midd for app
-const app =  express();
+const app = express();
 // to use bodyParser (for text/number data transfer between clientg and server)
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -27,17 +27,17 @@ app.use('/', require('./routes/index.js'));
 app.use('/upload', require('./routes/upload.js'));
 
 // 404
-app.use(function(req, res, next) {
-    return res.status(404).render('index.hbs');
+app.use(function (req, res, next) {
+	return res.status(404).render('index.hbs');
 });
 
 // Server error
-app.use(function(err, req, res, next) {
-    return res.status(500).render('index.hbs');
+app.use(function (err, req, res, next) {
+	return res.status(500).render('index.hbs');
 });
 
 // App port to listen on
-const PORT =  process.env.PORT || 80;
+const PORT = process.env.PORT || 80;
 
-// Server start 
+// Server start
 app.listen(PORT);
