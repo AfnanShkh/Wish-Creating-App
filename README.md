@@ -70,4 +70,4 @@ And then paste the adcode between the comments
 
 ## Author
 
-### [Afnan Shaikh](http://afnanshaikh.com 'My Website')
+# [Afnan Shaikh](http://afnan.dev 'My Website')
